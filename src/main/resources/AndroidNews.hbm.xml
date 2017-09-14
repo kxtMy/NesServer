@@ -1,0 +1,37 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+	<class name="com.kdt.testMaven3.bean.AndroidNews" table="android_news_test" schema="gankionews">
+		<id name="_id" type="string" column="ID">
+			<!-- <generator class="identity"></generator> -->
+		</id>
+		<property name="createdAt" type="date">
+			<column name="CreatedAt" length="20" />
+		</property>
+		<property name="desc" type="string">
+			<column name="Description" length="200" />
+		</property>
+		<property name="publishedAt" type="date">
+			<column name="PublishedAt" length="20" />
+		</property>
+		<property name="source" type="string">
+			<column name="Sources" length="10" />
+		</property>
+		<property name="type" type="string">
+			<column name="Type" length="10" />
+		</property>
+		<property name="url" type="string">
+			<column name="Url" length="255" />
+		</property>
+		<property name="used" type="string">
+			<column name="Used" length="10" />
+		</property>
+		<property name="who" type="string">
+			<column name="Who" length="20" />
+		</property>
+		<property name="images" type="string">
+			<column name="ImgUrl" length="255" />
+		</property>
+	</class>
+	<!-- <class name="AndroidNews"> <id name="id"></id> <property name="name"></property> 
+		<property name="age"></property> </class> -->
+</hibernate-mapping>
